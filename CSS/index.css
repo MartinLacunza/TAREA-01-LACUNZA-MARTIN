@@ -1,3 +1,10 @@
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
     font-family:Arial, Helvetica, sans-serif;
 }
+.titulo-principal{
+    margin: center;
+    padding: center;
+}
+h1{
+    background: red;
+}
