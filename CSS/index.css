@@ -1,10 +1,43 @@
 nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
     font-family:Arial, Helvetica, sans-serif;
+    
 }
 .titulo-principal{
-    margin: center;
-    padding: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 25px;
+    padding: 25px;
+    width: 85vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
-h1{
-    background: red;
+.acercadenosotros{
+    margin-left: 45px;
+    margin-right: 45px;
+    margin-bottom: 45px;
+    margin-top: 45px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#carouselExampleControls{
+    background: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+.divfooter{
+    text-align: center;
+    margin-left: 100px;
+}
+.nav.col-md-4.justify-content-end.list-unstyled.d-flex{
+    text-align: left;
+}
+.d-block.w-100{
+    width: 100px;
+    height: 600px;
 }
