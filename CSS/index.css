@@ -20,7 +20,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
     font-family: Arial, Helvetica, sans-serif;
 }
 #carouselExampleControls{
-    background: black;
+    ;
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 60px;
@@ -41,3 +41,23 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
     width: 100px;
     height: 600px;
 }
+.formulario{
+    margin-left: 150px;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p{
+    margin-left: 150px;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.sucursales{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    }
+    .listas{
+        margin-left: 150px;
+        margin-right: auto;    
+    }
