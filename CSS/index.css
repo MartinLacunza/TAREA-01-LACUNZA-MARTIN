@@ -29,6 +29,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
     padding-bottom: 25px;
     padding-right: 25px;
     padding-left: 25px;
+    border: 1px solid black
 }
 .divfooter{
     text-align: center;
@@ -60,4 +61,7 @@ nav.navbar.navbar-expand-lg.navbar-dark.bg-dark{
     .listas{
         margin-left: 150px;
         margin-right: auto;    
+    }
+    .body-gral{
+        background: rgba(235, 236, 237, 0.27);
     }
