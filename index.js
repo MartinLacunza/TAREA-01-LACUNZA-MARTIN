@@ -76,3 +76,14 @@ app.post('/formulario', (req, res) =>{
         });
     };
 });
+
+
+
+
+app.listen(Port, ()=>{
+    console.log(`Servidor corriendo en el puerto ${Port}`);
+});
+
+app.on('error', (error)=>{
+    console.log(`Tenemos un error ${error}`);
+})
