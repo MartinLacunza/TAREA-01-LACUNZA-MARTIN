@@ -22,7 +22,17 @@ const conectar = (
         console.log('Base de Datos Conectada!!');
     })
 );
+app.use(express.json());
+app.use(express.urlencoded({extended: false}));
 
+
+//configuramos la vista de la aplicacion
+
+
+/*app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
+hbs.registerPartials(path.join(__dirname, 'views/partials'));
+*/
 
 
 
@@ -42,8 +52,7 @@ app.post('/formulario', (req, res) =>{
 
     if(nombre == "" || precio == ""|| descripcion == ""){
         let validacion = 'Faltan datos para ingresar el producto'
-        res.render('formulario', {
-            titulo: 'Formulario',
+        res.render(/TAREA01/PAGES/contactos.html, {
             validacion
         })} else{
         console.log(nombre);
@@ -59,11 +68,11 @@ app.post('/formulario', (req, res) =>{
             producto_descripcion: descripcion
         };
 
-        let sql = "INSERT INTO PRODUCTOS SET ?";
+        let sql = "INSERT INTO FORMULARIO SET ?";
 
         let query = conexion.query(sql, data, (err, results) =>{
             if(err) throw err;
-            res.render('formulario', {titulo: 'Formulario para completar'})
+            res.render('/TAREA01/PAGES/contacto.html')
         });
     };
 });
