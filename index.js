@@ -52,7 +52,7 @@ app.post('./PAGES/contacto.html', (req, res) =>{
 
     if(nombre == "" || telefono == ""|| correo == ""|| descripcion == ""){
         let validacion = 'Faltan datos para ingresar la consulta'
-        res.render(/TAREA01/PAGES/contactos.html, {
+        res.render(PAGES/contactos.html, {
             validacion
         })} else{
         console.log(nombre);
@@ -74,7 +74,7 @@ app.post('./PAGES/contacto.html', (req, res) =>{
 
         let query = conexion.query(sql, data, (err, results) =>{
             if(err) throw err;
-            res.render('/TAREA01/PAGES/contacto.html')
+            res.render('/PAGES/contacto.html')
         });
     };
 });
