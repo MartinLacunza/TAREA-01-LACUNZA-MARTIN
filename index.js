@@ -42,30 +42,32 @@ hbs.registerPartials(path.join(__dirname, 'views/partials'));
 
 
 
-app.post('/formulario', (req, res) =>{
+app.post('./PAGES/contacto.html', (req, res) =>{
     //console.log(req.body);
     /*console.log(req.body.nombre);
     console.log(req.body.precio);
     console.log(req.body.descripcion);*/
-    const {nombre, precio, descripcion} = req.body;
+    const {nombre, telefono, correo, descripcion} = req.body;
 
 
-    if(nombre == "" || precio == ""|| descripcion == ""){
-        let validacion = 'Faltan datos para ingresar el producto'
+    if(nombre == "" || telefono == ""|| correo == ""|| descripcion == ""){
+        let validacion = 'Faltan datos para ingresar la consulta'
         res.render(/TAREA01/PAGES/contactos.html, {
             validacion
         })} else{
         console.log(nombre);
-        console.log(precio);
+        console.log(telefono);
+        console.log(correo);
         console.log(descripcion);
 
 
 
         //conectar();
         let data = {
-            producto_nombre: nombre,
-            producto_precio: precio,
-            producto_descripcion: descripcion
+            contacto_nombre: nombre,
+            contacto_telefono: telefono,
+            contacto_correo: correo,
+            contacto_descripcion: descripcion
         };
 
         let sql = "INSERT INTO FORMULARIO SET ?";
