@@ -5,8 +5,7 @@ const Port = process.env.PORT || 8080;
 const mysql = require('mysql2');
 const path = require('path');
 const nodemailer = require('nodemailer');
-const { log } = require('console');
-const { consumers } = require('stream');
+
 
 //conexion a la base de datos
 const conexion = mysql.createConnection({
@@ -33,12 +32,6 @@ app.use(express.urlencoded({extended: false}));
 app.set('views', path.join(__dirname, 'views'));
 hbs.registerPartials(path.join(__dirname, 'views/partials'));
 */
-
-
-
-
-
-
 
 
 
