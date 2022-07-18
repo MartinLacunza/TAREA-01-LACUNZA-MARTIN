@@ -8,6 +8,7 @@ const nodemailer = require('nodemailer');
 
 
 //conexion a la base de datos
+/*
 const conexion = mysql.createConnection({
     host: process.env.HOST,
     user: process.env.USER,
@@ -20,7 +21,7 @@ const conectar = (
         if(error) throw error;
         console.log('Base de Datos Conectada!!');
     })
-);
+);*/
 app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
